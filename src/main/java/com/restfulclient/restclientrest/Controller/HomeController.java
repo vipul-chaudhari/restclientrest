@@ -18,7 +18,7 @@ public class HomeController {
     }
     private final ServiceLayer serviceLayer;
 
-    @GetMapping("/")
+    @GetMapping("/employee")
     public ResponseEntity<User> getData(){
         return new ResponseEntity<>(serviceLayer.consumeAPI(), HttpStatus.OK);
     }
