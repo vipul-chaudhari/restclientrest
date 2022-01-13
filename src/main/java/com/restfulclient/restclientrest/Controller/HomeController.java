@@ -18,8 +18,7 @@ public class HomeController {
     }
     private final ServiceLayer serviceLayer;
 
-    //lemmi see if changes are done
-    @GetMapping("/employee")
+    @GetMapping("/")
     public ResponseEntity<User> getData(){
         return new ResponseEntity<>(serviceLayer.consumeAPI(), HttpStatus.OK);
     }
